@@ -31,7 +31,9 @@ const generateAccessAndRefreshToken = async (userId) => {
 // cookie options
 const options = {
     httpOnly: true,
-    secure: false
+    secure: true,
+    sameSite: "none",
+    path: "/"
 };
 
 //register

@@ -15,10 +15,7 @@ app.get("/", (req, res) => {
 });
 
 app.use(cors({
-     origin: [
-        "http://localhost:5173",
-        "https://job-tracker-phvz.vercel.app"
-    ],
+    origin: "https://job-tracker-phvz.vercel.app",
     credentials:true
 }))
 app.use(express.json())
