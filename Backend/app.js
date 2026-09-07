@@ -19,9 +19,9 @@ app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
 
 app.get("/", (req, res) => {
-    res.json({
+    res.status(200).json({
         success: true,
-        message: "Backend is running"
+        message: "Job Tracker Backend is running"
     });
 });
 
