@@ -30,7 +30,8 @@ function Login() {
         password,
       });
 
-      console.log(response.data);
+      //console.log("LOGIN DATA:", response.data);
+
       navigate("/dashboard");
     } catch (error) {
       console.log(error);
