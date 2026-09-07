@@ -8,7 +8,10 @@ import {middleware } from "./middlewares/error.middlewares.js";
 const app=express();
 
 app.use(cors({
-    origin: "https://job-tracker-phvz.vercel.app",
+     origin: [
+        "http://localhost:5173",
+        "https://job-tracker-phvz.vercel.app"
+    ],
     credentials:true
 }))
 app.use(express.json())
