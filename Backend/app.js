@@ -10,7 +10,7 @@ const app=express();
 app.use(cors({
     origin: [
         "http://localhost:5173",
-        "YOUR_VERCEL_FRONTEND_URL"
+        "https://job-tracker-phvz.vercel.app"
     ],
     credentials:true
 }))
