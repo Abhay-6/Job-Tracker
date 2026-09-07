@@ -18,6 +18,13 @@ app.use(express.json())
 app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
 
+app.get("/", (req, res) => {
+    res.json({
+        success: true,
+        message: "Backend is running"
+    });
+});
+
 app.use('/api/users',userRouter)
 app.use('/api/jobs',jobRouter)
 //error middleware
