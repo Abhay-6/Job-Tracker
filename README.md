@@ -34,4 +34,4 @@ A full-stack Job Tracking application built with React, Node.js, Express and Mon
 
 ## Author
 
-Abhay
+Abhay Kumar
